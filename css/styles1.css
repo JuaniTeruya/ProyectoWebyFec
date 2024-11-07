@@ -1,0 +1,129 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+}
+
+header {
+    background-color: #3f80b4;
+    color: #ffffff;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 4%;
+}
+
+
+/*HAMBURGUER*//*HAMBURGUER*//*HAMBURGUER*//*HAMBURGUER*//*HAMBURGUER*/
+/*HAMBURGUER*//*HAMBURGUER*//*HAMBURGUER*//*HAMBURGUER*//*HAMBURGUER*/
+.hamburger {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  width: 30px;
+  gap: 5px;
+  z-index: 2;
+}
+.celeste {
+  display: block;
+  width: 90%;
+  height: 4px;
+  background-color: #98c1e6;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+.blanco {
+  display: block;
+  width: 90%;
+  height: 4px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+#menu {
+    display: none;
+    background-color: #2c3e50;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+}
+#menu.visible {
+    display: flex;
+    justify-content: center;
+}
+#menu a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 15px;
+    padding: 10px;
+}
+#menu a:hover {
+    background-color: #34495e;
+    border-radius: 5px;
+}
+/*HAMBURGUER*//*HAMBURGUER*//*HAMBURGUER*//*HAMBURGUER*//*HAMBURGUER*/
+/*HAMBURGUER*//*HAMBURGUER*//*HAMBURGUER*//*HAMBURGUER*//*HAMBURGUER*/
+
+
+
+
+
+
+
+
+
+/*MAIN*//*MAIN*//*MAIN*//*MAIN*//*MAIN*//*MAIN*//*MAIN*//*MAIN*/
+/*MAIN*//*MAIN*//*MAIN*//*MAIN*//*MAIN*//*MAIN*//*MAIN*//*MAIN*/
+.main {
+    text-align: center;
+}
+.main img {
+    width: 100%;
+}
+.main h2 {
+    font-size: 1.8em;
+    color: #3d3636;
+}
+.main p {
+    color: #000000;
+    font-size: 1.4em;
+    padding: 0% 5% 0% 5%;
+    text-align: center;
+}
+/*MAIN*//*MAIN*//*MAIN*//*MAIN*//*MAIN*//*MAIN*//*MAIN*//*MAIN*/
+/*MAIN*//*MAIN*//*MAIN*//*MAIN*//*MAIN*//*MAIN*//*MAIN*//*MAIN*/
+
+
+
+
+
+
+
+/*FOOTER*//*FOOTER*//*FOOTER*//*FOOTER*//*FOOTER*//*FOOTER*//*FOOTER*/
+/*FOOTER*//*FOOTER*//*FOOTER*//*FOOTER*//*FOOTER*//*FOOTER*//*FOOTER*/
+footer {
+    background-color: #666666;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+    font-size: 0.9em;
+}
+footer a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+footer a:hover {
+    text-decoration: underline;
+}
+.video-container{
+    text-align: center;
+    margin:5% 0% 5% 0% ;
+}
+/*FOOTER*//*FOOTER*//*FOOTER*//*FOOTER*//*FOOTER*//*FOOTER*//*FOOTER*/
+/*FOOTER*//*FOOTER*//*FOOTER*//*FOOTER*//*FOOTER*//*FOOTER*//*FOOTER*/

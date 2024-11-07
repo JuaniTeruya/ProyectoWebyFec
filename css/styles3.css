@@ -1,0 +1,199 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+}
+
+header {
+    background-color: #3f80b4;
+    color: #ffffff;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 4%;
+}
+
+
+/*HAMBURGUER*//*HAMBURGUER*//*HAMBURGUER*//*HAMBURGUER*//*HAMBURGUER*/
+/*HAMBURGUER*//*HAMBURGUER*//*HAMBURGUER*//*HAMBURGUER*//*HAMBURGUER*/
+.hamburger {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    width: 30px;
+    gap: 5px;
+    z-index: 2;
+  }
+  .celeste {
+    display: block;
+    width: 90%;
+    height: 4px;
+    background-color: #98c1e6;
+    border-radius: 5px;
+    transition: 0.3s;
+  }
+  .blanco {
+    display: block;
+    width: 90%;
+    height: 4px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    transition: 0.3s;
+  }
+  #menu {
+    display: none;
+    background-color: #2c3e50;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+  }
+  #menu.visible {
+    display: flex;
+    justify-content: center;
+  }
+  #menu a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 15px;
+    padding: 10px;
+  }
+  #menu a:hover {
+    background-color: #34495e;
+    border-radius: 5px;
+  }
+
+footer {
+    background-color: #666666;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+    font-size: 0.9em;
+}
+
+footer a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+h1 {
+    text-align: center;
+}
+
+main {
+    text-align: center;
+}
+
+main p {
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+main img {
+    max-width: 100%;
+    height: auto; 
+    margin: 20px 0; 
+}
+
+.cuadro {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border: 1px solid #000;
+    margin: 20px auto;
+    width: 80%;
+    text-align: left;
+}
+
+.cuadro > div {
+    padding: 20px;
+    border-right: 1px solid #000;
+}
+
+.cuadro > div:last-child {
+    border-right: none;
+}
+
+
+.ventajas {
+    margin: 40px 10%;
+    text-align: center;
+}
+
+.ventajas-cuadro {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.ventaja {
+    width: 45%;
+    padding: 20px;
+    background-color: #f4f4f4;
+    margin: 10px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.testimonios {
+    margin: 40px 10%;
+    background-color: #3f80b4;
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.calculadora {
+    margin: 40px 10%;
+    text-align: center;
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.lista{
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #3f80b4;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.lista h3 {
+    text-align: center;
+    color: #3f80b4;
+}
+
+.lista label {
+    display: block;
+    margin: 10px 0;
+}
+
+.lista button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #3f80b4;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#resultado {
+    text-align: center;
+    margin-top: 20px;
+    font-weight: bold;
+    color: #3f80b4;
+}
