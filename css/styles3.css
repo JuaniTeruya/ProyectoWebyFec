@@ -28,44 +28,53 @@ header {
     width: 30px;
     gap: 5px;
     z-index: 2;
-  }
-  .celeste {
-    display: block;
-    width: 90%;
-    height: 4px;
-    background-color: #98c1e6;
-    border-radius: 5px;
-    transition: 0.3s;
-  }
-  .blanco {
-    display: block;
-    width: 90%;
-    height: 4px;
-    background-color: #ffffff;
-    border-radius: 5px;
-    transition: 0.3s;
-  }
-  #menu {
-    display: none;
-    background-color: #2c3e50;
-    text-align: center;
-    padding: 10px 0;
-    width: 100%;
-  }
-  #menu.visible {
+    transition: all ease 0.3s;
+}
+.hamburger:hover{
     display: flex;
-    justify-content: center;
-  }
-  #menu a {
-    color: #ffffff;
-    text-decoration: none;
-    margin: 0 15px;
-    padding: 10px;
-  }
-  #menu a:hover {
-    background-color: #34495e;
-    border-radius: 5px;
-  }
+    flex-direction: column;
+    cursor: pointer;
+    transform: scale(1.2);
+    gap: 5px;
+    z-index: 2;
+}
+.celeste {
+  display: block;
+  width: 90%;
+  height: 4px;
+  background-color: #98c1e6;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+.blanco {
+  display: block;
+  width: 90%;
+  height: 4px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+#menu {
+  display: none;
+  background-color: #2c3e50;
+  text-align: center;
+  padding: 10px 0;
+  width: 100%;
+}
+#menu.visible {
+  display: flex;
+  justify-content: center;
+}
+#menu a {
+  color: #ffffff;
+  text-decoration: none;
+  margin: 0 15px;
+  padding: 10px;
+}
+#menu a:hover {
+  background-color: #34495e;
+  border-radius: 5px;
+}
 
 footer {
     background-color: #666666;
@@ -196,4 +205,135 @@ main img {
     margin-top: 20px;
     font-weight: bold;
     color: #3f80b4;
+}
+
+@media (max-width: 600px) {
+    header {
+        flex-direction: row; 
+        justify-content: center; 
+        text-align: left;
+    }
+
+    .logo {
+        width: 20%;
+    }
+
+    .nombre {
+        flex-grow: 1;
+        text-align: center; 
+    }
+
+    .hamburger {
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+        gap: 5px;
+        z-index: 2;
+        margin-left: auto;
+    }
+
+    #menu a {
+        margin: 5px 0;
+    }
+
+    main p {
+        font-size: 1.1em;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    .cuadro {
+        grid-template-columns: 1fr; 
+        width: 90%;
+    }
+
+    .ventajas-cuadro {
+        justify-content: center;
+    }
+
+    .ventaja {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .testimonios {
+        margin: 20px 5%;
+    }
+
+    .calculadora {
+        margin: 20px 5%;
+    }
+
+    .lista {
+        width: 90%;
+    }
+
+    footer {
+        font-size: 0.8em;
+    }
+    
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: row; 
+        justify-content: center; 
+        text-align: left; 
+    }
+
+    .logo {
+        width: 15%; 
+    }
+
+    .nombre {
+        flex-grow: 1;
+        text-align: center; 
+    }
+
+    .hamburger {
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+        gap: 6px;
+        z-index: 2;
+        margin-left: auto; 
+    }
+
+    #menu a {
+        margin: 5px 0;
+    }
+
+    .cuadro {
+        grid-template-columns: 1fr; 
+        width: 90%;
+        text-align: center;
+    }
+
+    .cuadro {
+        grid-template-columns: 1fr; 
+        width: 90%;
+    }
+
+    .ventajas-cuadro {
+        justify-content: center;
+    }
+
+    .ventaja {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .testimonios {
+        margin: 20px 5%;
+    }
+
+    main p {
+        font-size: 1.2em;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    footer {
+        font-size: 0.85em;
+    }
 }

@@ -31,13 +31,13 @@ header {
   width: 30px;
   gap: 5px;
   z-index: 2;
+  transition: all ease 0.3s;
 }
 .hamburger:hover{
   display: flex;
   flex-direction: column;
   cursor: pointer;
-  width: 40px;
-  transition: 0.3s;
+  transform: scale(1.2);
   gap: 5px;
   z-index: 2;
 }

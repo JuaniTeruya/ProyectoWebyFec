@@ -32,7 +32,7 @@ function calcularPerfil() {
     } else if (independiente > dependiente) {
         resultado = "Tu perfil es más adecuado para un trabajo independiente.";
     } else {
-        resultado = "Tienes un perfil equilibrado; podrías adaptarte a ambos tipos de trabajo.";
+        resultado = "Tenés un perfil equilibrado; podrías adaptarte a ambos tipos de trabajo.";
     }
 
     document.getElementById("resultado").innerHTML = resultado;

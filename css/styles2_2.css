@@ -19,9 +19,21 @@ header {
 }
 
 .hamburger {
-    font-size: 1.8em;
+    display: flex;
+    flex-direction: column;
     cursor: pointer;
-    margin-left: auto; 
+    width: 30px;
+    gap: 5px;
+    z-index: 2;
+    transition: all ease 0.3s;
+}
+.hamburger:hover{
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    transform: scale(1.2);
+    gap: 5px;
+    z-index: 2;
 }
 
 #menu {
