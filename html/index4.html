@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tu Primer Trabajo</title>
+    <link rel="stylesheet" href="../css/styles4.css">
+    <script src="../java/script.js"></script>
+    <link rel="icon" href="../img/logo.png">
+
+</head>
+<body>
+    <header>
+        <img class="logo" src="../img/logo.png" title="logo" onclick="window.location.href='../index.html'" style="cursor: pointer;">
+        <h2 class="nombre">Tu Primer Trabajo</h2>
+        <div class="hamburger" onclick="hamburger()">
+            <span class="celeste"></span>
+            <span class="blanco"></span>
+            <span class="celeste"></span>
+        </div>
+    </header>
+    <nav id="menu">
+        <a href="../html/index2.html">Leyes Laborales</a>
+        <a href="../html/index4.html">Búsqueda de Trabajo</a>
+    </nav>
+    <main>
+        <div>
+            <h1>Búsqueda de Trabajo</h1>
+            <p>Es un proceso clave en tu desarrollo profesional. Implica explorar oportunidades laborales, preparar un currículum competitivo y adquirir habilidades para entrevistas. Este proceso puede ser desafiante, ya que los jóvenes suelen enfrentarse a la falta de experiencia previa y a un mercado laboral exigente.</p>
+        </div>
+        <div class="cuadro">
+            <p><b>Preparación Inicial</b></p>
+            <div class="grilla">
+                <div class="info">
+                    <p>Autoconocimiento</p>
+                    <p class="class">Algo que es necesario a tener en cuenta es esto, y unas preguntas que podrías responderte son:</p>
+                    <div>
+                        <li>¿En qué soy bueno?</ul>
+                        <li>¿Qué me apasiona hacer?</ul>
+                        <li>¿Dónde me veo trabajando en el futuro?</ul>
+                    </div>
+                    
+                    
+                </div>
+                <div class="info">
+                    <p>Currículum</p>
+                    <p>El currículum es tu carta de presentación profesional. Asegúrate de que incluya:</p>
+                    <div>
+                        <ul>Tus datos personales y de contacto.</ul>
+                        <ul>Formación académica y logros.</ul>
+                        <ul>Experiencia laboral o prácticas (si las tienes).</ul>
+                        <ul>Habilidades específicas (idiomas, herramientas tecnológicas, etc.).</ul>
+                        <ul>Actividades extracurriculares que muestren tu iniciativa.</ul>
+                    </div>
+                </div>
+                <div>Carta de Presentasión</div>
+                <div>Organización</div>
+            </div>
+        </div>
+        
+        <div id="testimonios" class="testimonios">
+            <h2>Testimonios de Trabajadores</h2>
+            <p>Cual es la experiencia de la gente:</p>
+            <div class="testimonio">
+                <p><em>“Trabajar de forma independiente me da la libertad que necesito para cuidar de mi familia, aunque los ingresos pueden ser impredecibles.”</em> - Eugenia, Decoradora de interiores.</p>
+            </div>
+            <div class="testimonio">
+                <p><em>“Prefiero un trabajo estable; me da seguridad económica y puedo planificar mejor mi futuro.”</em> - Gustavo, Médico</p>
+            </div>
+        </div>
+    </main>
+
+    <div class="lista">
+        <h3>¿Qué características tenés?</h3>
+        <form id="formulario">
+            <label><input type="checkbox" name="dependiente1"> Me gusta tener un horario fijo</label><br>
+            <label><input type="checkbox" name="independiente1"> Me gusta decidir cuándo trabajar</label><br>
+            <label><input type="checkbox" name="dependiente2"> Prefiero un salario fijo mensual</label><br>
+            <label><input type="checkbox" name="independiente2"> Me siento cómodo gestionando mis propios clientes</label><br>
+            <label><input type="checkbox" name="dependiente3"> Valoro los beneficios laborales (vacaciones, seguro)</label><br>
+            <label><input type="checkbox" name="independiente3"> Estoy dispuesto a asumir riesgos financieros</label><br>
+            <button type="button" onclick="calcularPerfil()">Ver perfil</button>
+        </form>
+        <div class="resultado" id="resultado"></div>
+    </div>
+    
+    <footer>
+        <div class="footer-general">
+            <div class="footer-seccion">
+                <h4>Contacto</h4>
+                <p>Si tienes alguna pregunta o comentario, no dudes en contactarnos:</p>
+                <ul>
+                    <li>ndiez@pioix.edu.ar</li>
+                    <li>jteruya@pioix.edu.ar</li>
+                    <li>fmanzanares@pioix.edu.ar</li>
+                    <li>tprieto@pioix.edu.ar</li>
+                </ul>
+            </div>
+            <div class="footer-seccion">
+                <h4>Redes Sociales</h4>
+                <p>Síguenos en nuestras redes sociales para estar al tanto de las últimas novedades:</p>
+                <ul>
+                    <li><a href="https://facebook.com" target="_blank">Facebook</a></li>
+                    <li><a href="https://twitter.com" target="_blank">Twitter</a></li>
+                    <li><a href="https://instagram.com" target="_blank">Instagram</a></li>
+                    <li><a href="https://linkedin.com" target="_blank">LinkedIn</a></li>
+                </ul>
+            </div>
+            <div class="footer-seccion">
+                <h4>Derechos de Autor</h4>
+                <p>&copy; 2024 Tu Primer Trabajo. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

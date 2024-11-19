@@ -115,6 +115,7 @@ body {
   /*HAMBURGUER*//*HAMBURGUER*//*HAMBURGUER*//*HAMBURGUER*//*HAMBURGUER*/
   /*HAMBURGUER*//*HAMBURGUER*//*HAMBURGUER*//*HAMBURGUER*//*HAMBURGUER*/
 
+
 img {
     width: 50%;
     height: auto;
@@ -159,12 +160,6 @@ img {
 }
 
 
-.law-info ul {
-    list-style-type: disc;
-    margin-left: 20px;
-}
-
-
 .law-info img {
     display: block;
     margin: 20px auto;
@@ -172,9 +167,8 @@ img {
 }
 
 
-
 .quiz-section {
-    background-color: #e9f2fa;
+    background-color: #dfe7f2;
     padding: 20px;
     border-radius: 10px;
     margin: 20px auto;
@@ -182,7 +176,7 @@ img {
 }
 
 .quiz button {
-    background-color: #3f80b4;
+    background-color: #3b6ea5;
     color: #ffffff;
     border: none;
     padding: 10px 20px;

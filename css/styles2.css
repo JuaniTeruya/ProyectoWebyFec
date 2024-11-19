@@ -13,49 +13,72 @@ header {
   align-items: center;
   justify-content: space-between;
 }
-
 .logo {
   width: 4%;
+  transition: all ease 0.3s;
+  @media (max-width:768px) {
+    width: 12.5%;
+  }
+  @media (min-width:768px) and (max-width:1024px) {
+    width: 6.5%; 
+  }
 }
-
-
-
-
-
-/*HAMBURGUER*//*HAMBURGUER*//*HAMBURGUER*//*HAMBURGUER*//*HAMBURGUER*/
-/*HAMBURGUER*//*HAMBURGUER*//*HAMBURGUER*//*HAMBURGUER*//*HAMBURGUER*/
-.hamburger {
+.logo:hover{
   display: flex;
   flex-direction: column;
   cursor: pointer;
-  width: 30px;
+  transform: scale(1.15);
   gap: 5px;
   z-index: 2;
-  transition: all ease 0.3s;
+}
+@media (min-width: 1025px) {
+  header h2.nombre {
+    margin-right: 2%;
+  }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  header h2.nombre {
+    margin-right: 3.5%;
+  }
+}
+@media (max-width: 768px) {
+  header h2.nombre {
+    margin-right: 5.5%;
+  }
+}
+/*HAMBURGUER*//*HAMBURGUER*//*HAMBURGUER*//*HAMBURGUER*//*HAMBURGUER*/
+/*HAMBURGUER*//*HAMBURGUER*//*HAMBURGUER*//*HAMBURGUER*//*HAMBURGUER*/
+.hamburger {
+display: flex;
+flex-direction: column;
+width: 30px;
+gap: 5px;
+z-index: 2;
+transition: all ease 0.3s;
 }
 .hamburger:hover{
   display: flex;
   flex-direction: column;
   cursor: pointer;
-  transform: scale(1.2);
+  transform: scale(1.3);
   gap: 5px;
   z-index: 2;
 }
 .celeste {
-  display: block;
-  width: 90%;
-  height: 4px;
-  background-color: #98c1e6;
-  border-radius: 5px;
-  transition: 0.3s;
+display: block;
+width: 90%;
+height: 4px;
+background-color: #98c1e6;
+border-radius: 5px;
+
 }
 .blanco {
-  display: block;
-  width: 90%;
-  height: 4px;
-  background-color: #ffffff;
-  border-radius: 5px;
-  transition: 0.3s;
+display: block;
+width: 90%;
+height: 4px;
+background-color: #ffffff;
+border-radius: 5px;
+transition: 0.3s;
 }
 #menu {
   display: none;
@@ -73,10 +96,13 @@ header {
   text-decoration: none;
   margin: 0 15px;
   padding: 10px;
+  transition: all ease 0.3s;
 }
 #menu a:hover {
   background-color: #34495e;
   border-radius: 5px;
+  cursor: pointer;
+  transform: scale(1.1);
 }
 /*HAMBURGUER*//*HAMBURGUER*//*HAMBURGUER*//*HAMBURGUER*//*HAMBURGUER*/
 /*HAMBURGUER*//*HAMBURGUER*//*HAMBURGUER*//*HAMBURGUER*//*HAMBURGUER*/
@@ -87,129 +113,541 @@ header {
 
 
 
+/*MAIN*//*MAIN*//*MAIN*//*MAIN*//*MAIN*//*MAIN*//*MAIN*//*MAIN*//*MAIN*/
+/*MAIN*//*MAIN*//*MAIN*//*MAIN*//*MAIN*//*MAIN*//*MAIN*//*MAIN*//*MAIN*/
+@media (min-width: 1025px) {
 
-main {
-  text-align: center;
-}
-.contenedorLinea {
-  position: relative;
-  max-width: 50%;
-}
-.leyImp {
-  position: relative;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  padding-right: 50px;
-  background: #e56c6c;
-  border-top-left-radius: 10%;
-  border-bottom-left-radius: 10%;
-  z-index: 0;
-}
-.leyImp::after {  /* LINEA */
-  content: '';
-  position: absolute;
-  right: 0; 
-  top: 0; 
-  bottom: 0; 
-  width: 5px; 
-  background-color: #ddd; 
-  z-index: 1;
-}
-.leyImp::before {  /* PUNTO */
-  content: '';
-  position: absolute;
-  right: -8.5px; 
-  top: 35%; 
-  width: 15px; 
-  height: 15px; 
-  background-color: #e66c6c; 
-  border-radius: 50%; 
-  border: 4.5px solid;
-  border-color: #ffffff;
-  z-index: 2; 
+  main {
+    text-align: center;
+  }
+  .contenedorLinea {
+    position: relative;
+    max-width: 100%;
+    margin-top: 20px;
+  }
+
+
+
+  .ley1 {
+    position: relative;
+    margin-left: 330px;
+    margin-right: 50%;
+    padding-right: 50px;
+    padding-bottom: 20px;
+    background-color: #87D2B3;
+    border-bottom-left-radius: 45%;
+    border-top-left-radius: 45%;
+    z-index: 0;
+    transition: all ease 0.25s;
+
+  }
+  .ley1:hover {
+    padding: 2.5% 0 2.5%;
+    margin-left: 0px;
+    cursor: pointer;
+    padding-right: 50px;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+    z-index: 0;
+  }
+  .ley1::after {  /* LINEA */
+    content: '';
+    position: absolute;
+    right: 0; 
+    top: 0; 
+    bottom: 0; 
+    width: 5px; 
+    background-color: #ddd; 
+    z-index: 1;
+  }
+  .ley1::before {  /* PUNTO */
+    content: '';
+    position: absolute;
+    right: -8.5px; 
+    top: 42.5%; 
+    width: 15px; 
+    height: 15px; 
+    background-color: #368665; 
+    border-radius: 50%; 
+    border: 4.5px solid;
+    border-color: #ffffff;
+    z-index: 2; 
+  }
+  .ley1 section {
+    position: relative;
+    text-align: right;
+    padding: 10px;
+    margin-bottom: 5px;
+  }
+
+
+
+
+
+  .ley2 {
+    position: relative;
+    padding-bottom: 20px;
+    margin-right: 330px;
+    margin-left: 49.75%;
+    margin-bottom: 20px;
+    padding-left: 50px;
+    background-color: #506bf1fb;
+    border-top-right-radius: 45%;
+    border-bottom-right-radius: 45%;
+    z-index: 0;
+    transition: all ease 0.25s;
+  }
+  .ley2:hover {
+    padding: 2.5% 0 2.5%;
+    margin-right: 0px;
+    cursor: pointer;
+    padding-left: 50px;
+    border-top-right-radius: 0%;
+    border-bottom-right-radius: 0%;
+    z-index: 0;
+  }
+  .ley2::before {  /* LINEA */
+    content: '';
+    position: absolute;
+    left: 0; 
+    top: 0; 
+    bottom: 0; 
+    width: 5px; 
+    background-color: #ddd; 
+    z-index: 1;
+  }
+  .ley2::after {  /* PUNTO */
+    content: '';
+    position: absolute;
+    left: -8.5px; 
+    top: 42.5%; 
+    width: 15px; 
+    height: 15px; 
+    background-color: #12299ffb; 
+    border-radius: 50%; 
+    border: 4.5px solid;
+    border-color: #ffffff;
+    z-index: 2; 
+  }
+  .ley2 section {
+    position: relative;
+    text-align: left;
+    padding: 10px;
+  }
+
+
+
+
+  .ley3 {
+    position: relative;
+    margin-top: -1.1%;
+    margin-left: 330px;
+    padding-bottom: 20px;
+    margin-right: 50%;
+    padding-right: 50px;
+    background-color: #b1462e;
+    border-bottom-left-radius: 45%;
+    border-top-left-radius: 45%;
+    z-index: 0;
+    transition: all ease 0.25s;
+  }
+  .ley3:hover {
+    padding: 2.5% 0 2.5%;
+    margin-left: 0px;
+    cursor: pointer;
+    padding-right: 50px;
+    border-top-left-radius: 0%;
+    border-bottom-left-radius: 0%;
+    z-index: 0;
+  }
+  .ley3::after {  /* LINEA */
+    content: '';
+    position: absolute;
+    right: 0; 
+    top: 0; 
+    bottom: 0; 
+    width: 5px; 
+    background-color: #ddd; 
+    z-index: 1;
+  }
+  .ley3::before {  /* PUNTO */
+    content: '';
+    position: absolute;
+    right: -8.5px; 
+    top: 42.5%; 
+    width: 15px; 
+    height: 15px; 
+    background-color: #742817; 
+    border-radius: 50%; 
+    border: 4.5px solid;
+    border-color: #ffffff;
+    z-index: 2; 
+  }
+  .ley3 section {
+    position: relative;
+    text-align: right;
+    padding: 10px;
+    margin-bottom: 5px;
+  }
+
+
+
+
+
+  .ley4 {
+    position: relative;
+    margin-top: 0px;
+    margin-right: 330px;
+    margin-left: 49.75%;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    padding-left: 50px;
+    background-color: #848db9fb;
+    border-top-right-radius: 45%;
+    border-bottom-right-radius: 45%;
+    z-index: 0;
+    transition: all ease 0.25s;
+  }
+  .ley4:hover {
+    padding: 2.5% 0 2.5%;
+    margin-right: 0;
+    margin-bottom: 0;
+    cursor: pointer;
+    padding-left: 50px;
+    border-top-right-radius: 0%;
+    border-bottom-right-radius: 0%;
+    z-index: 0;
+  }
+  .ley4::before {  /* LINEA */
+    content: '';
+    position: absolute;
+    left: 0; 
+    top: 0; 
+    bottom: 0; 
+    width: 5px; 
+    background-color: #ddd; 
+    z-index: 1;
+  }
+  .ley4::after {  /* PUNTO */
+    content: '';
+    position: absolute;
+    left: -8.5px; 
+    top: 42.5%; 
+    width: 15px; 
+    height: 15px; 
+    background-color: #585d7bfb; 
+    border-radius: 50%; 
+    border: 4.5px solid;
+    border-color: #ffffff;
+    z-index: 2; 
+  }
+  .ley4 section {
+    position: relative;
+    text-align: left;
+    padding: 10px;
+  }
+
+
+
+
+
+  .número {
+    font-size: 30px;
+    color: #ffffff;
+    text-decoration: none;
+  }
+  .ley{
+    font-size: 20px;
+    margin-top: -1px;
+  }
+  .año {
+    font-size: 20px;
+  }
 }
 
-.leyImp .año {
-  text-align: right;
-  font-size: 40px;
-  color: #292929;
-  padding: 10px;
-  border-radius: 5px;
-  position: relative;
-  margin-bottom: 5px;
-}
-.leyImp .ley {
-  text-align: right;
-  padding: 15px;
-  border-radius: 5px;
-}
-.leyPar {
-  position: relative;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  padding-left: 50px;
-  background: #660340;
-  border-top-left-radius: 10%;
-  border-bottom-left-radius: 10%;
-  z-index: 0;
-}
-.leyPar::before {  /* LINEA */
-  content: '';
-  position: absolute;
-  left: 0; 
-  top: 0; 
-  bottom: 0; 
-  width: 5px; 
-  background-color: #ddd; 
-  z-index: 1;
-}
-.leyPar::after {  /* PUNTO */
-  content: '';
-  position: absolute;
-  left: -8.5px; 
-  top: 35%; 
-  width: 15px; 
-  height: 15px; 
-  background-color: #660340; 
-  border-radius: 50%; 
-  border: 4.5px solid;
-  border-color: #ffffff;
-  z-index: 2; 
+
+
+
+
+
+@media (max-width: 768px) {
+
+  main {
+    text-align: center;
+  }
+  .contenedorLinea {
+    margin-top: 20px;
+  }
+  
+  
+  .ley1 {
+    margin: 0px 40px 10px 40px;
+    padding: 20px;
+    background-color: #87D2B3;
+    z-index: 0;
+    border-radius: 50%;
+    transition: all ease 0.25s;
+  }
+  .ley1:hover {
+    margin: 0px 0px 10px 0px;
+    padding: 25px;
+    cursor: pointer;
+    border-radius: 0%;
+    z-index: -2;
+  }
+  .ley1 section {
+    position: relative;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 5px;
+  }
+  
+  
+  .ley2 {
+    margin: 10px 40px 10px 40px;
+    padding: 20px;
+    background-color: #506bf1fb;
+    z-index: 0;
+    border-radius: 50%;
+    transition: all ease 0.25s;
+  }
+  .ley2:hover {
+    margin: 10px 0px 10px 0px;
+    padding: 25px;
+    cursor: pointer;
+    border-radius: 0%;
+    z-index: 0;
+  }
+  .ley2 section {
+    position: relative;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 5px;
+  }
+
+  
+  .ley3 {
+    margin: 10px 40px 10px 40px;
+    padding: 20px;
+    background-color: #b1462e;
+    z-index: 0;
+    border-radius: 50%;
+    transition: all ease 0.25s;
+  }
+  .ley3:hover {
+    margin: 10px 0px 10px 0px;
+    padding: 25px;
+    cursor: pointer;
+    border-radius: 0%;
+    z-index: 0;
+  }
+  .ley3 section {
+    position: relative;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 5px;
+  }
+
+  
+  .ley4 {
+    margin: 10px 40px 10px 40px;
+    padding: 20px;
+    background-color: #848db9fb;
+    z-index: 0;
+    border-radius: 50%;
+    transition: all ease 0.25s;
+  }
+  .ley4:hover {
+    margin: 10px 0px 0px 0px;
+    padding: 25px;
+    cursor: pointer;
+    border-radius: 0%;
+    z-index: 0;
+  }
+  .ley4 section {
+    position: relative;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 5px;
+  }
+  
+  .número {
+    font-size: 30px;
+    color: #ffffff;
+    text-decoration: none;
+  }
+  .ley{
+    font-size: 20px;
+    margin-top: -1px;
+  }
+  .año {
+    font-size: 20px;
+  }
+  .footer-general {
+    flex-direction: column;
+    align-items: center;
 }
 
-.leyPar .año {
-  text-align: left;
-  font-size: 40px;
-  color: #292929;
-  padding: 10px;
-  border-radius: 5px;
-  position: relative;
-  margin-bottom: 5px;
+.footer-seccion {
+    margin: 20px 0;
 }
-.leyPar .ley {
-  text-align: left;
-  padding: 15px;
-  border-radius: 5px;
 }
+
+
+
+@media (min-width: 769px) and (max-width: 1024px) {
+
+  main {
+    text-align: center;
+  }
+  .contenedorLinea {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+  }
+  .ley1 {
+    margin: 15px 7.5px 7.5px 15px;
+    padding: 20px;
+    background-color: #87D2B3;
+    border-top-left-radius: 30%;
+    transition: all ease 0.3s;
+  }
+  .ley1:hover {
+    margin: 0px 7.5px 7.5px 0px;
+    padding: 25px;
+    cursor: pointer;
+    border-radius: 0%;
+  }
+  .ley1 section {
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 5px;
+  }
+  
+  
+  .ley2 {
+    margin: 15px 15px 7.5px 7.5px;
+    padding: 20px;
+    background-color: #506bf1fb;
+    border-top-right-radius: 30%;
+    transition: all ease 0.3s;
+  }
+  .ley2:hover {
+    margin: 0px 0px 7.5px 7.5px;
+    padding: 25px;
+    cursor: pointer;
+    border-radius: 0%;
+  }
+  .ley2 section {
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 5px;
+  }
+
+  
+  .ley3 {
+    margin: 7.5px 7.5px 15px 15px;
+    padding: 20px;
+    background-color: #b1462e;
+    border-bottom-left-radius: 30%;
+    transition: all ease 0.3s;
+  }
+  .ley3:hover {
+    margin: 7.5px 7.5px 0px 0px;
+    padding: 25px;
+    cursor: pointer;
+    border-radius: 0%;
+  }
+  .ley3 section {
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 5px;
+  }
+
+  
+  .ley4 {
+    margin: 7.5px 15px 15px 7.5px;
+    padding: 20px;
+    background-color: #848db9fb;
+    border-bottom-right-radius: 30%;
+    transition: all ease 0.3s;
+  }
+  .ley4:hover {
+    margin: 7.5px 0px 0px 7.5px;
+    padding: 25px;
+    cursor: pointer;
+    border-radius: 0%;
+  }
+  .ley4 section {
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 5px;
+  }
+  
+  .número {
+    font-size: 30px;
+    color: #ffffff;
+    text-decoration: none;
+  }
+  .ley{
+    font-size: 20px;
+    margin-top: -1px;
+  }
+  .año {
+    font-size: 20px;
+  }
+}
+/*MAIN*//*MAIN*//*MAIN*//*MAIN*//*MAIN*//*MAIN*//*MAIN*//*MAIN*//*MAIN*/
+/*MAIN*//*MAIN*//*MAIN*//*MAIN*//*MAIN*//*MAIN*//*MAIN*//*MAIN*//*MAIN*/
+
+
+
+
+
 
 /*FOOTER*//*FOOTER*//*FOOTER*//*FOOTER*//*FOOTER*//*FOOTER*//*FOOTER*/
 /*FOOTER*//*FOOTER*//*FOOTER*//*FOOTER*//*FOOTER*//*FOOTER*//*FOOTER*/
 footer {
-  background-color: #666666;
+  background-color: #343a40;
   color: #ffffff;
+  padding: 40px 20px;
   text-align: center;
-  padding: 10px;
-  font-size: 0.9em;
 }
 
-footer a {
-  color: #ffffff;
+.footer-general {
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer-seccion {
+  flex: 1;
+  margin: 10px;
+}
+
+.footer-seccion h4 {
+  margin-bottom: 15px;
+  font-size: 18px;
+  border-bottom: 2px solid #007bff;
+  padding-bottom: 5px;
+}
+
+.footer-seccion ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-seccion ul li {
+  margin: 10px 0;
+}
+
+.footer-seccion a {
   text-decoration: none;
-  margin: 0 10px;
+  color: #ffffff;
 }
 
-footer a:hover {
-  text-decoration: underline;
+.footer-seccion a:hover {
+  color: #007bff; 
 }
+
 /*FOOTER*//*FOOTER*//*FOOTER*//*FOOTER*//*FOOTER*//*FOOTER*//*FOOTER*/
 /*FOOTER*//*FOOTER*//*FOOTER*//*FOOTER*//*FOOTER*//*FOOTER*//*FOOTER*/
