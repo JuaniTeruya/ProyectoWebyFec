@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tu Primer Trabajo</title>
+    <link rel="stylesheet" href="../css/styles3.css">
+    <script src="../java/script.js"></script>
+    <link rel="icon" href="../img/logo.png">
+
+</head>
+<body>
+    <header>
+        <img class="logo" src="../img/logo.png" title="logo" onclick="window.location.href='../index.html'" style="cursor: pointer;">
+        <h2 class="nombre">Tu Primer Trabajo</h2>
+        <div class="hamburger" onclick="hamburger()">
+            <span class="celeste"></span>
+            <span class="blanco"></span>
+            <span class="celeste"></span>
+        </div>
+    </header>
+    <nav id="menu">
+        <a href="../html/index2.html">Leyes Laborales</a>
+        <a href="../html/index4.html">Búsqueda de Trabajo</a>
+    </nav>
+    <main>
+        <div>
+            <h1>Modalidad Laboral</h1>
+            <p>Las modalidades de trabajo se refieren a las distintas formas en que las personas pueden desempeñar sus labores. Estas modalidades pueden clasificarse principalmente en dos categorías: trabajo independiente y trabajo dependiente.</p>
+        </div>
+        <div class="cuadro">
+            <div class="dependiente">
+                <h3>Dependiente</h3>
+                <p>El trabajo dependiente, también llamado empleo asalariado, es cuando una persona trabaja bajo la supervisión y dirección de una empresa o empleador, quien establece las condiciones de trabajo, horarios y obligaciones.</p>
+            </div>
+            <div id="independiente">
+                <h3>Independiente</h3>
+                <p>El trabajo independiente, o freelance, es cuando una persona trabaja por cuenta propia, sin depender directamente de un empleador. El trabajador tiene control total sobre cómo y cuándo realiza su trabajo, aunque también asume todos los riesgos y responsabilidades.</p>
+            </div>
+        </div>
+        <div id="ventajas" class="ventajas">
+            <h2>Ventajas y Desventajas de Cada Modalidad</h2>
+            <div class="ventajas-cuadro">
+                <div class="ventaja">
+                    <h4>Ventajas del Trabajo Dependiente</h4>
+                    <ul>
+                        <li>Estabilidad financiera y laboral.</li>
+                        <li>Beneficios como seguro médico y vacaciones.</li>
+                    </ul>
+                </div>
+                <div class="ventaja">
+                    <h4>Desventajas del Trabajo Dependiente</h4>
+                    <ul>
+                        <li>Menor flexibilidad horaria.</li>
+                        <li>Dependencia de las decisiones de la empresa.</li>
+                    </ul>
+                </div>
+                <div class="ventaja">
+                    <h4>Ventajas del Trabajo Independiente</h4>
+                    <ul>
+                        <li>Mayor flexibilidad en horarios.</li>
+                        <li>Posibilidad de crecimiento según resultados.</li>
+                    </ul>
+                </div>
+                <div class="ventaja">
+                    <h4>Desventajas del Trabajo Independiente</h4>
+                    <ul>
+                        <li>Ingresos variables e inestables.</li>
+                        <li>Responsabilidad total en decisiones y riesgos.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="testimonios" class="testimonios">
+            <h2>Testimonios de Trabajadores</h2>
+            <p>Cual es la experiencia de la gente:</p>
+            <div class="testimonio">
+                <p><em>“Trabajar de forma independiente me da la libertad que necesito para cuidar de mi familia, aunque los ingresos pueden ser impredecibles.”</em> - Eugenia, Decoradora de interiores.</p>
+            </div>
+            <div class="testimonio">
+                <p><em>“Prefiero un trabajo estable; me da seguridad económica y puedo planificar mejor mi futuro.”</em> - Gustavo, Médico</p>
+            </div>
+        </div>
+    </main>
+
+    <div class="lista">
+        <h3>¿Qué características tenés?</h3>
+        <form id="formulario">
+            <label><input type="checkbox" name="dependiente1"> Me gusta tener un horario fijo</label><br>
+            <label><input type="checkbox" name="independiente1"> Me gusta decidir cuándo trabajar</label><br>
+            <label><input type="checkbox" name="dependiente2"> Prefiero un salario fijo mensual</label><br>
+            <label><input type="checkbox" name="independiente2"> Me siento cómodo gestionando mis propios clientes</label><br>
+            <label><input type="checkbox" name="dependiente3"> Valoro los beneficios laborales (vacaciones, seguro)</label><br>
+            <label><input type="checkbox" name="independiente3"> Estoy dispuesto a asumir riesgos financieros</label><br>
+            <button type="button" onclick="calcularPerfil()">Ver perfil</button>
+        </form>
+        <div class="resultado" id="resultado"></div>
+    </div>
+    
+    <footer>
+        <div class="footer-general">
+            <div class="footer-seccion">
+                <h4>Contacto</h4>
+                <p>Si tienes alguna pregunta o comentario, no dudes en contactarnos:</p>
+                <ul>
+                    <li>ndiez@pioix.edu.ar</li>
+                    <li>jteruya@pioix.edu.ar</li>
+                    <li>fmanzanares@pioix.edu.ar</li>
+                    <li>tprieto@pioix.edu.ar</li>
+                </ul>
+            </div>
+            <div class="footer-seccion">
+                <h4>Redes Sociales</h4>
+                <p>Síguenos en nuestras redes sociales para estar al tanto de las últimas novedades:</p>
+                <ul>
+                    <li><a href="https://facebook.com" target="_blank">Facebook</a></li>
+                    <li><a href="https://twitter.com" target="_blank">Twitter</a></li>
+                    <li><a href="https://instagram.com" target="_blank">Instagram</a></li>
+                    <li><a href="https://linkedin.com" target="_blank">LinkedIn</a></li>
+                </ul>
+            </div>
+            <div class="footer-seccion">
+                <h4>Derechos de Autor</h4>
+                <p>&copy; 2024 Tu Primer Trabajo. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
